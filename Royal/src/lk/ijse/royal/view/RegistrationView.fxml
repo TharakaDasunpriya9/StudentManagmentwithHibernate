@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="562.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.royal.controller.RegistrationViewController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-5.0" prefHeight="569.0" prefWidth="896.0">
+         <children>
+            <Label layoutX="126.0" layoutY="14.0" prefHeight="54.0" prefWidth="385.0" text="Manage Registration " textFill="#16a085">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnBack" layoutX="775.0" layoutY="20.0" onAction="#btnBack" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #e74c3c;" text="BACK" textFill="#fffafa">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+      <Pane layoutX="47.0" layoutY="69.0" prefHeight="487.0" prefWidth="370.0">
+         <children>
+            <VBox layoutX="3.0" layoutY="-2.0" prefHeight="338.0" prefWidth="347.0">
+               <children>
+                  <JFXTextField fx:id="txtRegNo" labelFloat="true" prefHeight="52.0" prefWidth="347.0" promptText="Reg NO">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <Label prefHeight="18.0" prefWidth="41.0" text="Date" />
+                  <DatePicker fx:id="txtDate1" prefHeight="45.0" prefWidth="225.0" />
+                  <JFXTextField fx:id="txtFee" labelFloat="true" layoutX="10.0" layoutY="62.0" prefHeight="52.0" prefWidth="347.0" promptText="Fee">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtStudentID" labelFloat="true" prefHeight="52.0" prefWidth="347.0" promptText="Student ID" />
+                  <JFXTextField fx:id="txtCode" labelFloat="true" prefHeight="52.0" prefWidth="347.0" promptText="Course ID" />
+               </children>
+            </VBox>
+            <JFXButton layoutX="37.0" layoutY="382.0" onAction="#btnAdd" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: green;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="219.0" layoutY="382.0" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: green;" text="REMOVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
